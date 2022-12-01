@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 import { twitterApi } from "../globalConfig.js";
 
 export async function getMedias(ref) {
