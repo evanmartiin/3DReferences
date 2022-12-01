@@ -7,5 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Trigger fetch function
-        run: node dist/index.js
+      - uses: ./
