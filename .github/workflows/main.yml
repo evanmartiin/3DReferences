@@ -17,6 +17,7 @@ jobs:
       - name: Fetch
         run: |
           npm install
+          npm run build
           npm run fetch
         env:
           NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
