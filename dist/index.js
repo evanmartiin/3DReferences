@@ -12051,7 +12051,9 @@ async function getMedias(ref) {
   if (ref.properties["Photos"].files.length) {
     return Promise.all(
       ref.properties.Photos.files.slice(0, 4).map((file) => {
-        return twitterApi.v1.uploadMedia(getBuffer(file.file.url), {
+        let buffer = getBuffer(file.file.url);
+        console.log(buffer);
+        return twitterApi.v1.uploadMedia(buffer, {
           mimeType: "png",
         });
       })
