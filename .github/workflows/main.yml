@@ -1,0 +1,12 @@
+name: Fetch Notion and Tweet
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger fetch function
+        run: echo Test
