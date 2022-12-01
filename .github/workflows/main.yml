@@ -5,8 +5,8 @@ on:
     - cron: "*/5 * * * *"
 
 jobs:
-  cron:
+  fetch:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger fetch function
-        run: echo Test
+        run: node index.js
