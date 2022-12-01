@@ -5,7 +5,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "ncc build index.js -o dist"
+		"build": "ncc build index.js -o dist",
+		"fetch": "node index.js"
 	},
 	"dependencies": {
 		"@notionhq/client": "^1.0.1",
