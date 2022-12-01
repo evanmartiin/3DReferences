@@ -4,9 +4,7 @@ export async function getMedias(ref) {
   if (ref.properties["Photos"].files.length) {
     return Promise.all(
       ref.properties.Photos.files.slice(0, 4).map((file) => {
-        let buffer = getBuffer(file.file.url);
-        console.log(buffer);
-        return twitterApi.v1.uploadMedia(buffer, {
+        return twitterApi.v1.uploadMedia(getBuffer(file.file.url), {
           mimeType: "png",
         });
       })
