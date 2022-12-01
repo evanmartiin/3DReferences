@@ -1,6 +1,9 @@
 name: Fetch Notion and Tweet
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
 
 jobs:
   fetch:
