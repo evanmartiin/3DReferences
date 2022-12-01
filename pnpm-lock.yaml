@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@notionhq/client': ^1.0.1
+  '@vercel/ncc': ^0.34.0
   dotenv: ^16.0.3
   node-fetch: ^3.3.0
   twitter-api-v2: ^1.12.9
@@ -11,6 +12,9 @@ dependencies:
   dotenv: 16.0.3
   node-fetch: 3.3.0
   twitter-api-v2: 1.12.9
+
+devDependencies:
+  '@vercel/ncc': 0.34.0
 
 packages:
 
@@ -34,6 +38,11 @@ packages:
   /@types/node/18.11.9:
     resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: false
+
+  /@vercel/ncc/0.34.0:
+    resolution: {integrity: sha512-G9h5ZLBJ/V57Ou9vz5hI8pda/YQX5HQszCs3AmIus3XzsmRn/0Ptic5otD3xVST8QLKk7AMk7AqpsyQGN7MZ9A==}
+    hasBin: true
+    dev: true
 
   /asynckit/0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}

@@ -4,10 +4,16 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"scripts": {
+		"build": "ncc build index.js -o dist"
+	},
 	"dependencies": {
 		"@notionhq/client": "^1.0.1",
 		"dotenv": "^16.0.3",
 		"node-fetch": "^3.3.0",
 		"twitter-api-v2": "^1.12.9"
+	},
+	"devDependencies": {
+		"@vercel/ncc": "^0.34.0"
 	}
 }
